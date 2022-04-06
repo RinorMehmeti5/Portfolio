@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+.navigimi{
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 16px 104px;
+	background:#fff;
+	z-index: 9999;
+	height: 80px;
+}
+
+#linqet_e_navigimit{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#linqet_e_navigimit li{
+	list-style: none;
+	padding-right:  30px;
+}
+#linqet_e_navigimit li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	color:#070606;
+	padding: 10px 10px;
+	font-family: Candara Light;
+	cursor: pointer;
+}
+
+#linqet_e_navigimit li a:hover{
+	color: #3a3838;
+	border-bottom: 5px solid#3536368e;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius:8px; 
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	transition: all 0.1s ease 0.1s;
+}
+#linqet_e_navigimit li a:active{
+	border-bottom: 1px solidd#3536368e;
+	background-color: #f0eae6;
+}
+#bar{
+	color:#ff5733;
+	display: none;
+}
+@media screen and (max-width: 1300px){
+	.navigimi{
+	padding: 16px 50px;
+	}
+
+	#linqet_e_navigimit li{
+		padding-right:  5px;
+	}
+	#linqet_e_navigimit li a{
+		font-size: 14.4px;
+	}
+	#linqet_e_navigimit .ikona a{
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+} 
+
+@media screen and (max-width: 1024px){
+	.navigimi{
+	padding: 16px 50px;
+	}
+
+	#linqet_e_navigimit li{
+		padding-right:  5px;
+	}
+	#linqet_e_navigimit li a{
+		font-size: 14.4px;
+	}
+	#linqet_e_navigimit .ikona a{
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+} 
+
+@media screen and (max-width: 991px){
+	.navigimi{
+	padding: 16px 48px;
+	}
+
+	#linqet_e_navigimit{
+		flex-direction: column;
+		text-align: center;
+		width: 300px;
+		height: 100vh;
+		position: fixed;
+		top: 24px;
+		right: -300px;
+		background-color: rgba(0,0,0,0.8);
+		z-index: 100000;
+		margin-top: 67.2px;
+		transition: 0.5s;
+	}
+
+	#linqet_e_navigimit li{
+		padding-right:  0;
+		padding: 20px 0;
+	}
+	#linqet_e_navigimit li a{
+		font-size: 19.2px;
+		color: white;
+		border:2px solid white;
+	}
+	#linqet_e_navigimit .ikona{
+		padding-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	#linqet_e_navigimit .ikona a{
+		padding: 20px 20px 15px 15px;
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+
+	#bar{
+		display: initial;
+		cursor: pointer;
+	}
+}
